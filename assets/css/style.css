@@ -1,0 +1,80 @@
+.fon{
+    width: 1000px;
+    height: 1000px;
+    padding: 105px;
+    background-image: url(../img/road.png);
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+
+.car{
+    margin: 15px;
+    animation-name: run;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    position: relative;
+    
+}
+
+@keyframes run{
+    0%{
+       
+        right: 0px;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+    }
+
+
+       20%{
+          transform: rotate(0deg);
+       }
+    25%{
+        transform: rotate(45deg);
+        left: 890px;
+        top:0px
+    }
+      30%{
+          transform: rotate(90deg);
+      }
+
+
+      45%{
+          transform: rotate(90deg);
+      }
+    50%{
+        transform: rotate(135deg);
+        left: 890px;
+        top:890px;
+    }
+        55%{
+            transform: rotate(180deg);
+        }
+
+        
+        70%{
+            transform: rotate(180deg);
+        }
+    75%{
+        transform: rotate(225deg);
+        left:  0px;
+        top:890px;
+    }
+        80%{
+            transform: rotate(270deg);
+        }
+
+        95%{
+            transform: rotate(270deg);
+        }
+    100%{
+        transform: rotate(360deg);
+        right: 0px;
+        left: 0px;
+        top: 0px;
+        bottom: 0px;
+    }
+}
+
